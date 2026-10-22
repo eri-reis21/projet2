@@ -1,0 +1,11 @@
+# Secrets
+.env
+wp-config.php
+
+# Fichiers générés
+*.log
+node_modules/
+
+# Système
+.DS_Store
+Thumbs.db
