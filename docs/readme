@@ -1,0 +1,32 @@
+# Eco-challenge
+
+## L'équipe et le concept
+- **Équipe** : Erica Reis ([@eri-reis21](https://github.com/eri-reis21)) et Sarah ([@Sarah-tamri-ISFSC](https://github.com/Sarah-tamri-ISFSC))
+- **Concept** : [Ce projet propose une plateforme en ligne dédiée aux étudiants pour acheter, vendre, échanger ou donner des livres, des vêtements et du matériel à petit prix directement sur le campus. En centralisant les annonces et en facilitant les transactions locales, il permet de faire des économies tout en luttant contre le gaspillage. Cette initiative solidaire renforce ainsi l'entraide et la confiance au sein de la communauté étudiante.]
+
+## Outils utilisés
+- WordPress (Gutenberg + thème enfant)
+- Local WP (environnement local)
+- VS Code (+ Live Server, Prettier)
+- Git / GitHub
+- Figma
+
+## Conventions
+**Branches** : jamais de travail direct sur `main`.
+- `feature/nom-de-la-tache`
+- `fix/nom-du-bug`
+- `docs/nom-du-document`
+
+**Commits** : `feat:`, `fix:`, `docs:` suivis d'un message court.
+
+**Nommage des fichiers** : minuscules, tirets, sans accent ni espace (ex. `carte-defi.css`).
+
+**Workflow** : tâche → branche → commit → push → pull request → relecture par l'autre membre → merge.
+
+## Répartition des tâches
+| Tâche | Responsable |
+|---|---|
+| [Structure HTML / Gutenberg] | [Sarah] |
+| [CSS / design system] | [Erica] |
+| [JS / interactions] | [Sarah] |
+| [Documentation] | [Erica] |
