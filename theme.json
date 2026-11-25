@@ -1,4 +1,169 @@
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
-  "version": 3
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "1040px",
+      "wideSize": "1340px"
+    },
+    "color": {
+      "defaultPalette": false,
+      "palette": [
+        { "slug": "principale", "color": "#494C29", "name": "Principale" },
+        { "slug": "secondaire", "color": "#959663", "name": "Secondaire" },
+        { "slug": "accent-clair", "color": "#FFDCF6", "name": "Accent clair" },
+        { "slug": "accent", "color": "#DB79C2", "name": "Accent" },
+        { "slug": "fond", "color": "#FFF9EE", "name": "Fond" },
+        { "slug": "erreur", "color": "#BA0030", "name": "Erreur" }
+      ]
+    },
+    "typography": {
+      "defaultFontSizes": false,
+      "fluid": true,
+      "fontFamilies": [
+        {
+          "slug": "titre",
+          "name": "Titre (Tanker)",
+          "fontFamily": "Tanker, Impact, sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Tanker",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": ["file:./assets/fonts/Tanker-Regular.woff2"]
+            }
+          ]
+        },
+        {
+          "slug": "texte",
+          "name": "Texte (Milligram)",
+          "fontFamily": "Milligram, 'Helvetica Neue', Arial, sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Milligram",
+              "fontWeight": "300",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": ["file:./assets/fonts/Milligram-Light-trial.ttf"]
+            },
+            {
+              "fontFamily": "Milligram",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": ["file:./assets/fonts/Milligram-Regular-trial.ttf"]
+            },
+            {
+              "fontFamily": "Milligram",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": ["file:./assets/fonts/Milligram-Medium-trial.ttf"]
+            }
+          ]
+        }
+      ],
+      "fontSizes": [
+        { "slug": "petite", "name": "Petite", "size": "0.875rem", "fluid": false },
+        { "slug": "texte", "name": "Texte", "size": "1rem", "fluid": false },
+        { "slug": "bouton", "name": "Bouton", "size": "1.125rem", "fluid": false },
+        { "slug": "prix", "name": "Prix", "size": "1.5rem", "fluid": false },
+        {
+          "slug": "titre-3",
+          "name": "Titre 3",
+          "size": "2.075rem",
+          "fluid": { "min": "1.5rem", "max": "2.075rem" }
+        },
+        {
+          "slug": "titre-2",
+          "name": "Titre 2",
+          "size": "2.4875rem",
+          "fluid": { "min": "1.75rem", "max": "2.4875rem" }
+        },
+        {
+          "slug": "titre-1",
+          "name": "Titre 1",
+          "size": "6rem",
+          "fluid": { "min": "2.5rem", "max": "6rem" }
+        }
+      ]
+    },
+    "spacing": {
+      "defaultSpacingSizes": false,
+      "spacingSizes": [
+        { "slug": "xs", "name": "XS", "size": "0.5rem" },
+        { "slug": "s", "name": "S", "size": "1rem" },
+        { "slug": "m", "name": "M", "size": "2rem" },
+        { "slug": "l", "name": "L", "size": "4rem" }
+      ]
+    },
+    "custom": {
+      "rayon": "0.5rem",
+      "contour": "0.1875rem",
+      "transition": "0.2s ease-in-out",
+      "ombre": "0 0.25rem 0.75rem color-mix(in srgb, var(--wp--preset--color--principale) 30%, transparent)"
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--fond)",
+      "text": "var(--wp--preset--color--principale)"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--texte)",
+      "fontSize": "var(--wp--preset--font-size--texte)",
+      "fontWeight": "400",
+      "lineHeight": "1.6"
+    },
+    "css": "small, .has-petite-font-size { font-weight: 300; }",
+    "elements": {
+      "link": {
+        "color": { "text": "var(--wp--preset--color--principale)" },
+        ":hover": {
+          "color": { "text": "var(--wp--preset--color--accent)" }
+        }
+      },
+      "heading": {
+        "color": { "text": "var(--wp--preset--color--principale)" },
+        "typography": { "lineHeight": "1.1" }
+      },
+      "h1": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--titre)",
+          "fontSize": "var(--wp--preset--font-size--titre-1)",
+          "fontWeight": "400"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--titre)",
+          "fontSize": "var(--wp--preset--font-size--titre-2)",
+          "fontWeight": "400"
+        }
+      },
+      "h3": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--texte)",
+          "fontSize": "var(--wp--preset--font-size--titre-3)",
+          "fontWeight": "500"
+        }
+      },
+      "button": {
+        "color": {
+          "background": "var(--wp--preset--color--accent-clair)",
+          "text": "var(--wp--preset--color--principale)"
+        },
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--bouton)",
+          "fontWeight": "300"
+        },
+        "border": { "radius": "var(--wp--custom--rayon)" },
+        ":hover": {
+          "color": { "background": "var(--wp--preset--color--accent)" }
+        }
+      }
+    }
+  }
 }
