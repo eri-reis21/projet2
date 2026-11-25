@@ -1,0 +1,53 @@
+/* Composant carte : eco-card
+   Toutes les valeurs viennent de theme.json (variables --wp--preset-- et --wp--custom--). */
+
+.eco-card {
+  background-color: var(--wp--preset--color--principale);
+  color: var(--wp--preset--color--fond);
+  padding: var(--wp--preset--spacing--s);
+  border-radius: var(--wp--custom--rayon);
+  overflow: hidden;
+  transition:
+    transform var(--wp--custom--transition),
+    box-shadow var(--wp--custom--transition);
+}
+
+/* Les liens dans la carte reprennent la couleur du texte de la carte
+   (sauf les boutons, qui gardent leurs couleurs définies dans theme.json) */
+.eco-card a:not(.wp-element-button) {
+  color: inherit;
+}
+
+/* Les titres dans la carte reprennent la couleur du texte de la carte
+   (sinon ils seraient vert foncé sur fond vert foncé) */
+.eco-card :where(h1, h2, h3, h4, h5, h6) {
+  color: inherit;
+}
+
+/* Survol */
+.eco-card:hover {
+  transform: translateY(calc(-1 * var(--wp--preset--spacing--xs)));
+  box-shadow: var(--wp--custom--ombre);
+}
+
+/* Focus clavier visible : sur la carte quand un lien/bouton à l'intérieur est ciblé */
+.eco-card:focus-within {
+  box-shadow: var(--wp--custom--ombre);
+}
+
+.eco-card a:focus-visible,
+.eco-card button:focus-visible {
+  outline: var(--wp--custom--contour) solid var(--wp--preset--color--accent-clair);
+  outline-offset: var(--wp--custom--contour);
+}
+
+/* Respect des utilisateurs qui réduisent les animations */
+@media (prefers-reduced-motion: reduce) {
+  .eco-card {
+    transition: none;
+  }
+
+  .eco-card:hover {
+    transform: none;
+  }
+}
