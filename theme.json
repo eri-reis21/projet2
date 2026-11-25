@@ -51,6 +51,7 @@
               "fontWeight": "300",
               "fontStyle": "normal",
               "fontDisplay": "swap",
+              "unicodeRange": "U+0000-002F, U+003A-20AB, U+20AD-10FFFF",
               "src": ["file:./assets/fonts/Milligram-Light-trial.ttf"]
             },
             {
@@ -58,6 +59,7 @@
               "fontWeight": "400",
               "fontStyle": "normal",
               "fontDisplay": "swap",
+              "unicodeRange": "U+0000-002F, U+003A-20AB, U+20AD-10FFFF",
               "src": ["file:./assets/fonts/Milligram-Regular-trial.ttf"]
             },
             {
@@ -65,6 +67,7 @@
               "fontWeight": "500",
               "fontStyle": "normal",
               "fontDisplay": "swap",
+              "unicodeRange": "U+0000-002F, U+003A-20AB, U+20AD-10FFFF",
               "src": ["file:./assets/fonts/Milligram-Medium-trial.ttf"]
             }
           ]
