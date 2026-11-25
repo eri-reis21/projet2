@@ -9,6 +9,10 @@
     },
     "color": {
       "defaultPalette": false,
+      "custom": false,
+      "customGradient": false,
+      "defaultGradients": false,
+      "defaultDuotone": false,
       "palette": [
         { "slug": "principale", "color": "#494C29", "name": "Principale" },
         { "slug": "secondaire", "color": "#959663", "name": "Secondaire" },
@@ -20,6 +24,7 @@
     },
     "typography": {
       "defaultFontSizes": false,
+      "customFontSize": false,
       "fluid": true,
       "fontFamilies": [
         {
