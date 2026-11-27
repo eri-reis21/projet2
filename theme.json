@@ -18,7 +18,8 @@
         { "slug": "secondaire", "color": "#959663", "name": "Secondaire" },
         { "slug": "accent-clair", "color": "#FFDCF6", "name": "Accent clair" },
         { "slug": "accent", "color": "#DB79C2", "name": "Accent" },
-        { "slug": "fond", "color": "#FFF9EE", "name": "Fond" },
+        { "slug": "fond", "color": "#FFFFFF", "name": "Fond" },
+        { "slug": "fond-secondaire", "color": "#FFF9EE", "name": "Fond secondaire" },
         { "slug": "erreur", "color": "#BA0030", "name": "Erreur" }
       ]
     },
